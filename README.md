@@ -6,6 +6,6 @@
 
 	This app is developed in two frameworks: Windows Universal Application and Android.
 
- I contributed to MainPage.xaml and MainPage.xaml.cs.
+ I contributed to Android Manifest.xml, Main.axml and MainActivity.cs.
 
  To download the Windows app, go to this link: https://www.dropbox.com/s/6yg3m0iqatlp3nm/Android%20CityWeather.apk?dl=0
