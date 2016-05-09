@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24.0dp"
+        android:id="@+id/space1"
+        android:layout_marginBottom="0.0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="372.0dp"
+        android:layout_height="27.0dp"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="One Click "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView1"
+            android:gravity="right"
+            android:textColor="#ffd31212"
+            android:layout_width="171.5dp"
+            android:layout_height="28.0dp" />
+        <TextView
+            android:text="Weather App"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:id="@+id/textView2"
+            android:gravity="top"
+            android:textColor="#ff2e7d32"
+            android:textSize="22dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/citySect">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/city"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ff000000"
+            android:hint="Enter City"
+            android:textColorHint="#ff8a8080" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/countrySect">
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/country"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ff000000"
+            android:textColorHint="#ff8a8080"
+            android:hint="Enter Country" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/getSection">
+        <Button
+            android:id="@+id/find"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Find" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="33.0dp"
+        android:id="@+id/timeSection">
+        <TextView
+            android:text="Current Time:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/timelabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:id="@+id/timetext" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempSection">
+        <TextView
+            android:text="Temperature:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/templabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/temptext" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/humSection">
+        <TextView
+            android:text="Humidity:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/humlabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/humtext" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/condSection">
+        <TextView
+            android:text="Condition:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/condlabel" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:id="@+id/condtext" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/condSection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="left"
+                android:id="@+id/condtext" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34.5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginRight="0.0dp">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/space2" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/space4" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="35.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3" />
+        <CheckBox
+            android:text="°C"
+            android:layout_width="126.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox1"
+            android:checked="true" />
+        <CheckBox
+            android:text="°F"
+            android:layout_width="131.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox2"
+            android:layout_marginRight="0.0dp" />
+        <CheckBox
+            android:text="K"
+            android:layout_width="85.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox3" />
+    </LinearLayout>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="83.0dp"
+        android:id="@+id/image" />
+</LinearLayout>
